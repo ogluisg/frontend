@@ -1,7 +1,7 @@
 export const CAL_CONFIG = {
   calLink: "https://cal.com/luis-sanchez-f4rxbu/30min",
   defaultConfig: {
-    name: "AI Agency",
+    name: "Sanflow AI",
     email: "",
     notes: "30 Minute Discovery Call",
     guests: [],

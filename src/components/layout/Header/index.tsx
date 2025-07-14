@@ -30,28 +30,28 @@ export function Header({
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
+          {/* Left: Logo (Sanflow) */}
           <Link href="/" className="flex items-center space-x-2">
+            <span className="font-bold text-xl">Sanflow</span>
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">
-                AI
-              </span>
+              <span className="text-white font-bold text-sm">AI</span>
             </div>
-            <span className="font-bold text-xl">Agency</span>
           </Link>
 
           {/* Navigation */}
           <Navigation items={navigation} />
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button
-              data-cal-link="luis-sanchez-f4rxbu/30min"
-              data-cal-config='{"theme":"dark"}'
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-8 px-3"
-            >
-              Book 30 Minute Discovery Call
-            </button>
+          {/* CTA Button and AI badge on the right */}
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center">
+              <button
+                data-cal-link="luis-sanchez-f4rxbu/30min"
+                data-cal-config='{"theme":"dark"}'
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-8 px-3"
+              >
+                Book 30 Minute Discovery Call
+              </button>
+            </div>
           </div>
         </div>
       </div>

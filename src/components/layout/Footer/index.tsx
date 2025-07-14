@@ -46,11 +46,9 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">
-                  AI
-                </span>
+                <span className="text-white font-bold text-sm">AI</span>
               </div>
-              <span className="font-bold text-xl">Agency</span>
+              <span className="font-bold text-xl">Sanflow</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
               Empowering businesses with cutting-edge AI solutions for chatbots,
@@ -139,7 +137,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © 2024 AI Agency. All rights reserved.
+            © 2024 Sanflow AI. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link

@@ -269,7 +269,7 @@ export function Contact() {
 
             {/* Why Choose Us */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Why Choose AI Agency?</h3>
+              <h3 className="text-xl font-bold">Why Choose Sanflow AI?</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />

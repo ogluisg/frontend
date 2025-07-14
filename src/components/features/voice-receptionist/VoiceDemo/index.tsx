@@ -19,7 +19,7 @@ import {
 const demoTranscript = [
   {
     speaker: "ai",
-    text: "Thank you for calling AI Agency. How can I assist you today?",
+    text: "Thank you for calling Sanflow AI. How can I assist you today?",
     time: "0:05",
   },
   {
