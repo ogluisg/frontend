@@ -4,15 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
 import { motion } from "framer-motion";
-import {
-  Calendar,
-  CheckCircle,
-  Clock,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-} from "lucide-react";
+import { Calendar, CheckCircle, Mail, Send } from "lucide-react";
 import { useState } from "react";
 
 export function Contact() {
@@ -226,38 +218,6 @@ export function Contact() {
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-muted-foreground">hello@aiagency.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-lg bg-primary/10">
-                    <Phone className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-lg bg-primary/10">
-                    <MapPin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Office</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-lg bg-primary/10">
-                    <Clock className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Business Hours</p>
-                    <p className="text-muted-foreground">
-                      Mon-Fri: 9AM-6PM PST
-                    </p>
                   </div>
                 </div>
               </div>

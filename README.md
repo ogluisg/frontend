@@ -174,7 +174,6 @@ This project is licensed under the MIT License.
 For support and questions, please contact:
 
 - Email: hello@aiagency.com
-- Phone: +1 (555) 123-4567
 
 ---
 
