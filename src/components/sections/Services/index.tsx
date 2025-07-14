@@ -1,9 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { Service } from "@/types";
+import { Button } from "@/components/ui/Button";
 import {
   Card,
   CardContent,
@@ -11,10 +8,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import Cal from "@calcom/embed-react";
-import { CAL_CONFIG } from "@/lib/cal-config";
-import { MessageSquare, Zap, Phone, ArrowRight } from "lucide-react";
+import { Service } from "@/types";
+import { motion } from "framer-motion";
+import { ArrowRight, MessageSquare, Phone, Zap } from "lucide-react";
+import Link from "next/link";
 
 const services: Service[] = [
   {

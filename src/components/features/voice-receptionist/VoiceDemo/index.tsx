@@ -1,20 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { VoiceCall } from "@/types";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import {
-  Phone,
-  PhoneOff,
+  Clock,
   Mic,
   MicOff,
-  Volume2,
-  Clock,
+  Phone,
+  PhoneOff,
   User,
+  Volume2,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const demoTranscript = [
   {

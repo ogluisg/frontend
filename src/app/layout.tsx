@@ -1,8 +1,7 @@
+import { CalPopupInitializer } from "@/components/CalPopupInitializer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { getCalApi } from "@calcom/embed-react";
-import { CalPopupInitializer } from "@/components/CalPopupInitializer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

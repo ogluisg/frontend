@@ -1,23 +1,19 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
-import Cal from "@calcom/embed-react";
-import { BookingModal } from "@/components/ui/BookingModal";
-import { CAL_CONFIG } from "@/lib/cal-config";
+import { motion } from "framer-motion";
 import {
-  Mail,
-  Phone,
-  MapPin,
-  Clock,
-  Send,
-  CheckCircle,
   Calendar,
+  CheckCircle,
+  Clock,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
 } from "lucide-react";
+import { useState } from "react";
 
 export function Contact() {
   const [formData, setFormData] = useState({

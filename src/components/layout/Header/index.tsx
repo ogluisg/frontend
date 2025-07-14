@@ -1,12 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { HeaderProps } from "./types";
+import Link from "next/link";
 import { Navigation } from "./Navigation";
-import { Button } from "@/components/ui/Button";
-import Cal from "@calcom/embed-react";
-import { CAL_CONFIG } from "@/lib/cal-config";
+import { HeaderProps } from "./types";
 
 const defaultNavigation = [
   { label: "Services", href: "#services" },

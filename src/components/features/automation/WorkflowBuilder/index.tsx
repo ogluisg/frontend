@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui/Button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { cn } from "@/lib/utils";
 import { WorkflowStep } from "@/types";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import { Zap, Mail, Database, CheckCircle, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRight, CheckCircle, Database, Zap } from "lucide-react";
+import { useState } from "react";
 
 const workflowSteps: WorkflowStep[] = [
   {

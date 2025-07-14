@@ -1,10 +1,9 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
-import Cal from "@calcom/embed-react";
 import { CAL_CONFIG } from "@/lib/cal-config";
+import Cal from "@calcom/embed-react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Calendar, X } from "lucide-react";
 
 interface BookingModalProps {

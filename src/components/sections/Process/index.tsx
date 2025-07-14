@@ -1,12 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import Cal from "@calcom/embed-react";
-import { CAL_CONFIG } from "@/lib/cal-config";
-import { Phone, Target, Rocket, TrendingUp, CheckCircle } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { CheckCircle, Phone, Rocket, Target, TrendingUp } from "lucide-react";
 
 const processSteps = [
   {

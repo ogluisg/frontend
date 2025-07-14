@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { HeroProps } from "./types";
 import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 import { ArrowRight, Play, Star } from "lucide-react";
+import { HeroProps } from "./types";
 
 const defaultHero: HeroProps = {
   title: "Transform Your Business with AI-Powered Solutions",
