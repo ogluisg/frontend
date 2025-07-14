@@ -1,15 +1,16 @@
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+"use client";
+
 import { Button } from "@/components/ui/Button";
 import {
   Facebook,
-  Twitter,
-  Linkedin,
   Instagram,
+  Linkedin,
   Mail,
-  Phone,
   MapPin,
+  Phone,
+  Twitter,
 } from "lucide-react";
+import Link from "next/link";
 
 const footerLinks = {
   services: [
@@ -120,7 +121,16 @@ export function Footer() {
                 <span>San Francisco, CA</span>
               </div>
             </div>
-            <Button size="sm" className="w-full">
+            <Button
+              size="sm"
+              className="w-full"
+              onClick={() => {
+                const element = document.querySelector("#contact");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Get Started
             </Button>
           </div>

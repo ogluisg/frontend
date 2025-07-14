@@ -5,12 +5,14 @@ import { cn } from "@/lib/utils";
 import { HeaderProps } from "./types";
 import { Navigation } from "./Navigation";
 import { Button } from "@/components/ui/Button";
+import Cal from "@calcom/embed-react";
+import { CAL_CONFIG } from "@/lib/cal-config";
 
 const defaultNavigation = [
-  { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "/contact" },
+  { label: "Services", href: "#services" },
+  { label: "Process", href: "#process" },
+  { label: "Demo", href: "/demo" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Header({
@@ -43,9 +45,13 @@ export function Header({
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
-              Get Started
-            </Button>
+            <button
+              data-cal-link="luis-sanchez-f4rxbu/30min"
+              data-cal-config='{"theme":"dark"}'
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-8 px-3"
+            >
+              Book 30 Minute Discovery Call
+            </button>
           </div>
         </div>
       </div>

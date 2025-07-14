@@ -78,13 +78,29 @@ export function Hero({
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button size="lg" className="group">
+              <Button
+                size="lg"
+                className="group"
+                onClick={() => {
+                  const element = document.querySelector("#contact");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 {ctaText}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button variant="outline" size="lg" className="group">
-                <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+              <Button
+                variant="outline"
+                size="lg"
+                className="group flex items-center gap-2"
+                asChild
+              >
+                <a href="/demo" className="flex items-center gap-2">
+                  <Play className="h-5 w-5" />
+                  <span>Watch Demo</span>
+                </a>
               </Button>
             </motion.div>
 

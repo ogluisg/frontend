@@ -12,6 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import Cal from "@calcom/embed-react";
+import { CAL_CONFIG } from "@/lib/cal-config";
 import { MessageSquare, Zap, Phone, ArrowRight } from "lucide-react";
 
 const services: Service[] = [
@@ -177,12 +179,16 @@ export function Services() {
               operations with our AI solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg">Schedule a Demo</Button>
-              </Link>
-              <Link href="/pricing">
+              <button
+                data-cal-link="luis-sanchez-f4rxbu/30min"
+                data-cal-config='{"theme":"dark"}'
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8"
+              >
+                Book 30 Minute Discovery Call
+              </button>
+              <Link href="/demo">
                 <Button variant="outline" size="lg">
-                  View Pricing
+                  View Demos
                 </Button>
               </Link>
             </div>

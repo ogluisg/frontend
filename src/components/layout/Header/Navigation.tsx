@@ -19,6 +19,15 @@ export function Navigation({ items, className }: NavigationProps) {
             key={item.href}
             href={item.href}
             className="text-sm font-medium transition-colors hover:text-primary"
+            onClick={(e) => {
+              if (item.href.startsWith("#")) {
+                e.preventDefault();
+                const element = document.querySelector(item.href);
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
           >
             {item.label}
           </Link>
@@ -44,7 +53,16 @@ export function Navigation({ items, className }: NavigationProps) {
                 key={item.href}
                 href={item.href}
                 className="text-sm font-medium transition-colors hover:text-primary"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  setIsOpen(false);
+                  if (item.href.startsWith("#")) {
+                    e.preventDefault();
+                    const element = document.querySelector(item.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }
+                }}
               >
                 {item.label}
               </Link>
