@@ -5,6 +5,46 @@ import { WorkflowBuilder } from "@/components/features/automation/WorkflowBuilde
 import { VoiceDemo } from "@/components/features/voice-receptionist/VoiceDemo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { MessageSquare, Zap, Phone } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Try Our AI Solutions - Interactive Demos",
+  description:
+    "Experience the power of our AI technology with interactive demos. Try our AI chatbot, automation workflows, and voice receptionist to see how our solutions can transform your business operations.",
+  keywords: [
+    "AI demo",
+    "chatbot demo",
+    "automation demo",
+    "voice AI demo",
+    "interactive AI",
+    "AI testing",
+    "business AI tools",
+    "AI workflow demo",
+  ],
+  openGraph: {
+    title: "Try Our AI Solutions - Interactive Demos",
+    description:
+      "Experience the power of our AI technology with interactive demos. Try our AI chatbot, automation workflows, and voice receptionist.",
+    url: "https://sanflow.co/demo",
+    images: [
+      {
+        url: "/demo-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sanflow AI Interactive Demos",
+      },
+    ],
+  },
+  twitter: {
+    title: "Try Our AI Solutions - Interactive Demos",
+    description:
+      "Experience the power of our AI technology with interactive demos. Try our AI chatbot, automation workflows, and voice receptionist.",
+    images: ["/demo-twitter-image.png"],
+  },
+  alternates: {
+    canonical: "/demo",
+  },
+};
 
 export default function DemoPage() {
   return (
